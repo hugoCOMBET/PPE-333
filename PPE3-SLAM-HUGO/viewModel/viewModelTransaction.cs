@@ -76,7 +76,7 @@ namespace PPE3_SLAM_HUGO.viewModel
         }
         public void LalistTransaction()
         {
-            //ListTransaction = new ObservableCollection<Transactions>(vmDaoTransaction.SelectById(selectedClient.Id));
+            ListTransaction = new ObservableCollection<Transactions>(vmDaoTransaction.SelectById(selectedClient.Id));
         }
     }
 }

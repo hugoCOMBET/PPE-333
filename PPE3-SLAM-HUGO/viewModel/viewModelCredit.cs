@@ -19,6 +19,8 @@ namespace PPE3_SLAM_HUGO.viewModel
 
         private ObservableCollection<Clients> listClient;
 
+        private double creditautiliser;
+
         public ObservableCollection<Clients> ListClient { get => listClient; set => listClient = value; }
 
         public viewModelCredit(DAOclients thedaoClient)
@@ -77,6 +79,18 @@ namespace PPE3_SLAM_HUGO.viewModel
             }
         }
 
+        public double CreditaUtiliser
+        {
+            get
+            {
+                return creditautiliser;
+            }
+            set
+            {
+                creditautiliser = value; 
+            }
+        }
+
         public Clients Selectedclient
         {
             get => selectedClient;
@@ -98,9 +112,10 @@ namespace PPE3_SLAM_HUGO.viewModel
             }
         }
 
-        //private void AjouterCredit()
-        //{
-        //    selectedClient.Credit = selectedClient.Credit + ; 
-        //}
+
+        private void AjouterCredit()
+        {
+            selectedClient.Credit = selectedClient.Credit + CreditaUtiliser;
+        }
     }
 }

@@ -46,5 +46,10 @@ namespace Model.Data
                 monClient,
                 (double)r["MontantTransaction"]); 
         }
+        public List<Transactions> SelectByClient(int id)
+        {
+            DataTable 
+            return listTransactions
+        }
     }
 }
